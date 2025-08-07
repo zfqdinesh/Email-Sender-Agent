@@ -63,7 +63,7 @@ Best regards,
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    tools = [send_email , make_call ,send_sms]
+    tools = [send_email ]
     agent = initialize_agent(
         tools,
         llm,
